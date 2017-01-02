@@ -1,0 +1,33 @@
+<link rel="import" href="bower_components/polymer/polymer.html">
+<link rel="import" href="bower_components/paper-button/paper-button.html">
+<link rel="import" href="bower_components/paper-icon-button/paper-icon-button.html">
+
+<link rel="import" href="./sc-style.html">
+
+
+
+<dom-module id="sc-styledemo">
+<link rel="import" href="./sc-style.css" type="css">
+
+  <template>
+
+      <paper-button raised class="blue">This is a button in sc</paper-button>
+      <paper-icon-button icon="menu"></paper-icon-button>
+
+  </template>
+
+  <script>
+    Polymer({
+
+      is: 'sc-styledemo',
+
+      properties: {
+        prop1: {
+          type: String,
+          value: 'sc-styledemo',
+        },
+      },
+
+    });
+  </script>
+</dom-module>
