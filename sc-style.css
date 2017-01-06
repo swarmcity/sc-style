@@ -1,8 +1,8 @@
 /*
 
 @license
-Copyright (c) 2016 deevee.world. All rights reserved.
-Component created by Bennisan
+Copyright (c) 2016 SwarmCity. All rights reserved.
+Component created by Faffy Dee
 /////////////////
 swarm.city
 /////////////////
@@ -70,7 +70,7 @@ This Font Software is licensed under the SIL Open Font License, Version 1.1.
 
   :root {
 
-    /*  BASIC COLORS OF deevee.world  */
+    /*  BASIC COLORS OF SwarmCity  */
 	--sc-blue: #24B1FF;
 	--sc-darkblue: #004A93;
 	--sc-white: #FAFAFA;
@@ -81,7 +81,7 @@ This Font Software is licensed under the SIL Open Font License, Version 1.1.
 
 
 
-    /*  BASIC TYPO OF deevee.world  */
+    /*  BASIC TYPO OF SwarmCity  */
 
 	--montserrat-hairline: {
       font-family: Montserrathairline;
