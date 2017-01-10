@@ -1,18 +1,77 @@
 <link rel="import" href="bower_components/polymer/polymer.html">
 <link rel="import" href="bower_components/paper-button/paper-button.html">
-<link rel="import" href="bower_components/paper-icon-button/paper-icon-button.html">
+<link rel="import" href="bower_components/paper-checkbox/paper-checkbox.html">
+<link rel="import" href="bower_components/paper-input/paper-input.html">
+<link rel="import" href="bower_components/paper-input/paper-input-container.html">
+<link rel="import" href="bower_components/paper-input/paper-textarea.html">
+<link rel="import" href="bower_components/paper-item/paper-item.html">
+<link rel="import" href="bower_components/paper-listbox/paper-listbox.html">
+<link rel="import" href="bower_components/paper-dropdown-menu/paper-dropdown-menu.html">
+<link rel="import" href="bower_components/paper-menu/paper-menu.html">
 
 <link rel="import" href="./sc-style.html">
 
-
-
 <dom-module id="sc-styledemo">
 <link rel="import" href="./sc-style.css" type="css">
+  <style>
+    :host {
+    }
 
+    .fullcanvas {
+      box-sizing: border-box;
+      padding: 4vw;
+    }
+
+    paper-checkbox {
+      /*--paper-checkbox-unchecked-color: var(--sc-blue);*/
+      /*--paper-checkbox-checkmark-color: var(--sc-grey4);*/
+      /*text-align: right;*/
+    }
+
+    paper-textarea {
+      min-width: 300px;
+    }
+
+  </style>
   <template>
+    <div class="fullcanvas vertic startjust start">
 
-      <paper-button raised class="blue">This is a button in sc</paper-button>
-      <paper-icon-button icon="menu"></paper-icon-button>
+      <paper-button raised>This is a button in sc</paper-button>
+      
+      <div class="whitespace"></div>
+      
+      <paper-checkbox noink>Whuut?</paper-checkbox>
+      
+      <paper-input error-message="Invalid input!" label="Input label"></paper-input>
+      
+      <paper-input label="total" char-counter>
+        <div suffix>€</div>
+      </paper-input> 
+
+      <paper-input-container auto-validate>
+        <input is="iron-input" pattern="[0-9]*" value="No letters?">
+        <paper-input-error>Only numbers are allowed, you fool!</paper-input-error>
+      </paper-input-container>
+
+      <paper-textarea label="Textarea label"></paper-textarea>
+
+      <paper-dropdown-menu label="Your favourite pastry">
+        <paper-listbox class="dropdown-content">
+          <paper-item>Croissant</paper-item>
+          <paper-item>Donut</paper-item>
+          <paper-item>Financier</paper-item>
+          <paper-item>Madeleine konijn kom eens</paper-item>
+        </paper-listbox>
+      </paper-dropdown-menu>
+
+      <div class="whitespace"></div>
+
+      <paper-menu>
+        <paper-item>Item 1</paper-item>
+        <paper-item>Item 2</paper-item>
+      </paper-menu>
+
+    </div>
 
   </template>
 
