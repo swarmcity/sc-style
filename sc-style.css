@@ -486,6 +486,10 @@ This Font Software is licensed under the SIL Open Font License, Version 1.1.
     .txtshadow {
       text-shadow: 1px 1px 0px rgba(0,0,0,0.045);
     }
+
+    .heavytxtshadow {
+      text-shadow: 1px 2px 0px rgba(0,0,0,0.5);
+    }
     .basestructure {
       @apply(--base-structure);
     }
@@ -581,8 +585,8 @@ This Font Software is licensed under the SIL Open Font License, Version 1.1.
 
 
   iron-icon.big {
-    width: 60px;
-    height: 60px;
+    width: 40px;
+    height: 40px;
   }
   iron-icon.giant {
     width: 100px;
