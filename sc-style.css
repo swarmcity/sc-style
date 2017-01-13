@@ -501,6 +501,10 @@ This Font Software is licensed under the SIL Open Font License, Version 1.1.
       @apply(--base-structure-dark);
     }
 
+    .maxwidth {
+      width: 100%;
+      max-width: 600px;
+    }
 
     /* topbar-stuff */
     .topbar {
