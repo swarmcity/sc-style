@@ -73,6 +73,7 @@ This Font Software is licensed under the SIL Open Font License, Version 1.1.
     /*  BASIC COLOR-MIXINS OF swarm.city  */
     --sc-yellow: #EFD96F;
   	--sc-blue: #24B1FF;
+    --sc-darkblue: #0D4D85;
     --sc-green: #7AD69C;
     --sc-red: #F55858;
   	--sc-darkblue: #004A93;
@@ -149,7 +150,7 @@ This Font Software is licensed under the SIL Open Font License, Version 1.1.
       margin: 0px 0px 0px 0px;
       padding: 0px;
       font-size: 40px;
-      line-height: 40px;
+      line-height: 44px;
     };
     --sc-font-h3: {
       @apply(--montserrat-reg);
@@ -359,8 +360,13 @@ This Font Software is licensed under the SIL Open Font License, Version 1.1.
       @apply(--montserrat-bold);
     }
     .light {
-            @apply(--montserrat-light);
-
+      @apply(--montserrat-light);
+    }
+    .ultralight {
+      @apply(--montserrat-ultralight);
+    }
+    .hairline {
+      @apply(--montserrat-hairline);
     }
     .small {
       font-size: 12px;
@@ -376,6 +382,7 @@ This Font Software is licensed under the SIL Open Font License, Version 1.1.
   /*  COLOR-CLASSES of swarm.city  */
     .yellow { color: var(--sc-yellow); }
   	.blue { color: var(--sc-blue); }
+    .darkblue { color: var(--sc-darkblue); }
     .green { color: var(--sc-green); }
     .red { color: var(--sc-red); }
   	.darkblue { color: var(--sc-darkblue); }
@@ -388,6 +395,7 @@ This Font Software is licensed under the SIL Open Font License, Version 1.1.
 
     .yellowback { background-color: var(--sc-yellow); }
   	.blueback { background-color: var(--sc-blue); }
+    .darkblueback { background-color: var(--sc-darkblue); }
     .greenback { background-color: var(--sc-green); }
     .redback { background-color: var(--sc-red); }        
   	.darkblueback { background-color: var(--sc-darkblue); }
@@ -399,6 +407,7 @@ This Font Software is licensed under the SIL Open Font License, Version 1.1.
     .grey5back { background-color: var(--sc-grey5); }
 
   	.lighter { background-color: rgba(255,255,255,0.2); }
+    .lighterer { background-color: rgba(255,255,255,0.4); }
     .darker { background-color: rgba(0,0,0,0.025); }
   	.darkerer { background-color: rgba(0,0,0,0.05); }
 
@@ -443,11 +452,19 @@ This Font Software is licensed under the SIL Open Font License, Version 1.1.
       @apply(--layout-flex);
     }
 
+    .wrap {
+      @apply(--layout-wrap);
+    }
+
     /* general-stuff */
   	.whitespace {
   		width: 100%;
   		height: 20px;
   	}
+    .minispace {
+      width: 100%;
+      height: 6px;
+    }
     .total {
       width: 100%;
       height: 100%;
@@ -483,6 +500,10 @@ This Font Software is licensed under the SIL Open Font License, Version 1.1.
 
     .centertxt {
       text-align: center;
+    }
+
+    .shadow {
+      @apply(--base-shadow);
     }
 
     /* effects */
