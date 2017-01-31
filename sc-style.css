@@ -16,206 +16,11 @@ Copyright (c) 2011-2012, Julieta Ulanovsky (julieta.ulanovsky@gmail.com), with R
 This Font Software is licensed under the SIL Open Font License, Version 1.1.
  */
 
-  @font-face {
-      font-family: Montserratultralight;
-      src: url(sc-fonts/Montserrat-UltraLight.otf);
-    }
-    @font-face {
-      font-family: Montserrathairline;
-      src: url(sc-fonts/Montserrat-Hairline.otf);
-    }
-
-    @font-face {
-      font-family: Montserratlight;
-      src: url(sc-fonts/Montserrat-Light.otf);
-    }
-
-    @font-face {
-      font-family: Montserrat;
-      src: url(sc-fonts/Montserrat-Regular.otf);
-    }
-
-    @font-face {
-      font-family: Montserratsemibold;
-      src: url(sc-fonts/Montserrat-SemiBold.otf);
-    }
-
-    @font-face {
-      font-family: Montserratbold;
-      src: url(sc-fonts/Montserrat-Bold.otf);
-    }
-
-
-    @font-face {
-      font-family: Opensanslight;
-      src: url(sc-fonts/OpenSans-Light.ttf);
-    }
-
-    @font-face {
-      font-family: Opensans;
-      src: url(sc-fonts/OpenSans-Regular.ttf);
-    }
-
-    @font-face {
-      font-family: Opensanssemibold;
-      src: url(sc-fonts/OpenSans-Semibold.ttf);
-    }
-
-    @font-face {
-      font-family: Opensansbold;
-      src: url(sc-fonts/OpenSans-Bold.ttf);
-    }
-
-
 
   :root {
 
-    /*  BASIC COLOR-MIXINS OF swarm.city  */
-    --sc-yellow: #EFD96F;
-  	--sc-blue: #24B1FF;
-    --sc-darkblue: #0D4D85;
-    --sc-green: #7AD69C;
-    --sc-red: #F55858;
-  	--sc-darkblue: #004A93;
-  	--sc-white: #FAFAFA;
-  	--sc-grey1: #f2f2f2;
-  	--sc-grey2: #bfbfbf;
-    --sc-grey3: #666666;
-  	--sc-grey4: #333333;
-  	--sc-grey5: #191919;
 
-    /*  BASIC TYPO-MIXINS OF swarm.city  */
-  	--montserrat-hairline: {
-        font-family: Montserrathairline;
-        -webkit-font-smoothing: antialiased;
-        font-weight: 100;
-      };
-    --montserrat-ultralight: {
-      font-family: Montserratultralight;
-      -webkit-font-smoothing: antialiased;
-      font-weight: 100;
-    };
-    --montserrat-light: {
-      font-family: Montserratlight;
-      -webkit-font-smoothing: antialiased;
-      font-weight: 100;
-    };
-    --montserrat-reg: {
-      font-family: Montserrat;
-      -webkit-font-smoothing: antialiased;
-      font-weight: 300;
-    };
-    --montserrat-semibold: {
-      font-family: Montserratsemibold;
-      -webkit-font-smoothing: antialiased;
-      font-weight: 700;
-    };
-    --montserrat-bold: {
-      font-family: Montserratbold;
-      -webkit-font-smoothing: antialiased;
-      font-weight: 900;
-    };
-    --opensans-light: {
-      font-family: Opensanslight;
-      -webkit-font-smoothing: antialiased;
-      font-weight: 100;
-    };
-    --opensans-reg: {
-      font-family: Opensans;
-      -webkit-font-smoothing: antialiased;
-      font-weight: 100;
-    };
-    --sc-font-nowrap: {
-      white-space: nowrap;
-      overflow: hidden;
-      text-overflow: ellipsis;
-    };
-    --sc-font-h1: {
-      @apply(--montserrat-hairline);
-      -webkit-margin-before:0px;
-      -webkit-margin-after:0px;
-      -webkit-margin-start:0em;
-      -webkit-margin-end:0em;
-      margin: 0px 0px 0px 0px;
-      padding: 0px;
-      font-size: 52px;
-      line-height: 52px;
-    };
-    --sc-font-h2: {
-      @apply(--montserrat-light);
-      -webkit-margin-before:0px;
-      -webkit-margin-after:0px;
-      -webkit-margin-start:0em;
-      -webkit-margin-end:0em;
-      margin: 0px 0px 0px 0px;
-      padding: 0px;
-      font-size: 40px;
-      line-height: 44px;
-    };
-    --sc-font-h3: {
-      @apply(--montserrat-reg);
-      -webkit-margin-before:10px;
-      -webkit-margin-after:10px;
-      -webkit-margin-start:0em;
-      -webkit-margin-end:0em;
-      margin: 10px 0px 10px 0px;
-      padding: 0px;
-      font-size: 24px;
-      line-height: 26px;
-    };
-    --sc-font-h4: {
-      @apply(--montserrat-semibold);
-      -webkit-margin-before:10px;
-      -webkit-margin-after:10px;
-      -webkit-margin-start:0em;
-      -webkit-margin-end:0em;
-      margin: 10px 0px 10px 0px;
-      padding: 0px;
-      font-size: 20px;
-      line-height: 22px;
-    };
-    --sc-font-body1: {
-      @apply(--montserrat-light);
-      font-size: 18px;
-      font-weight: 300;
-      line-height: 24px;
-      -webkit-margin-before:0px;
-      -webkit-margin-after:0px;
-      -webkit-margin-start:0em;
-      -webkit-margin-end:0em;
-      margin: 0px;
-    };
-    --sc-font-body2: {
-      @apply(--opensans-light);
-      font-size: 15px;
-      font-weight: 300;
-      line-height: 20px;
-      -webkit-margin-before:0px;
-      -webkit-margin-after:0px;
-      -webkit-margin-start:0em;
-      -webkit-margin-end:0em;
-      margin: 0px;
-    };
-    --sc-font-ahref: {
-      @apply(--sc-font-body1);
-      @apply(--montserrat-reg);
-      color: var(--ac-blue);
-      text-decoration: none;
-      outline: none;
-      border-bottom: 1px dotted var(--ac-blue);
-    };
-    --sc-font-small: {
-      @apply(--montserrat-bold);
-      font-size: 10px;
-      font-weight: 300;
-      line-height: 12px;
-      -webkit-margin-before:0px;
-      -webkit-margin-after:0px;
-      -webkit-margin-start:0em;
-      -webkit-margin-end:0em;
-      margin: 0px;
-    };
-
+  
      --base-shadow: {
         box-shadow:
         0px 1px 2px -1px rgba(0,0,0,0.5);
@@ -271,7 +76,11 @@ This Font Software is licensed under the SIL Open Font License, Version 1.1.
     --paper-input-container-focus-color: var(--sc-blue);
       /* input - typo */
     --paper-input-container-label: {
-        @apply(--montserrat-light);
+
+        font-family: montserratlight;
+        -webkit-font-smoothing: antialiased;
+        font-weight: 100;
+
         font-size: 14px;
         font-weight: 300;
         line-height: 20px;
@@ -282,7 +91,10 @@ This Font Software is licensed under the SIL Open Font License, Version 1.1.
         margin: 0px;
     };
       --paper-input-error : {
-        @apply(--montserrat-semibold);
+        font-family: montserratsemibold;
+        -webkit-font-smoothing: antialiased;
+        font-weight: 700;
+
         font-size: 14px;
         line-height: 20px;
         -webkit-margin-before:0px;
@@ -292,17 +104,62 @@ This Font Software is licensed under the SIL Open Font License, Version 1.1.
         margin: 0px;
     };
     --paper-input-container-input: {
-      @apply(--sc-font-body1);
+      
+      font-family: montserratlight;
+      -webkit-font-smoothing: antialiased;
+      font-weight: 100;  
+
+      font-size: 18px;
+      font-weight: 300;
+      line-height: 24px;
+      -webkit-margin-before:0px;
+      -webkit-margin-after:0px;
+      -webkit-margin-start:0em;
+      -webkit-margin-end:0em;
+      margin: 0px;
+
+      /*@apply(--sc-font-body1);*/
     };
     --paper-input-prefix: {
-      @apply(--sc-font-body1);
+      
+      font-family: montserratlight;
+      -webkit-font-smoothing: antialiased;
+      font-weight: 100;  
+
+      font-size: 18px;
+      font-weight: 300;
+      line-height: 24px;
+      -webkit-margin-before:0px;
+      -webkit-margin-after:0px;
+      -webkit-margin-start:0em;
+      -webkit-margin-end:0em;
+      margin: 0px;
+
+      /*@apply(--sc-font-body1);*/
     };
     --paper-input-suffix: {
-      @apply(--sc-font-body1);
+      
+      font-family: montserratlight;
+      -webkit-font-smoothing: antialiased;
+      font-weight: 100;  
+
+      font-size: 18px;
+      font-weight: 300;
+      line-height: 24px;
+      -webkit-margin-before:0px;
+      -webkit-margin-after:0px;
+      -webkit-margin-start:0em;
+      -webkit-margin-end:0em;
+      margin: 0px;
+
+      /*@apply(--sc-font-body1);*/
     };
       /* item - typo */
     --paper-item: {
-      @apply(--montserrat-reg);
+        font-family: montserrat;
+        -webkit-font-smoothing: antialiased;
+        font-weight: 300;
+
         font-size: 14px;
         line-height: 20px;
         -webkit-margin-before:0px;
@@ -313,27 +170,118 @@ This Font Software is licensed under the SIL Open Font License, Version 1.1.
     };
       /* menu's - typo */
     --paper-listbox: {
-      @apply(--sc-font-body1);
+      
+      font-family: montserratlight;
+      -webkit-font-smoothing: antialiased;
+      font-weight: 100;  
+
+      font-size: 18px;
+      font-weight: 300;
+      line-height: 24px;
+      -webkit-margin-before:0px;
+      -webkit-margin-after:0px;
+      -webkit-margin-start:0em;
+      -webkit-margin-end:0em;
+      margin: 0px;
+
 
     };
     --paper-dropdown-menu: {
-      @apply(--sc-font-body1);
+      
+      font-family: montserratlight;
+      -webkit-font-smoothing: antialiased;
+      font-weight: 100;  
+
+      font-size: 18px;
+      font-weight: 300;
+      line-height: 24px;
+      -webkit-margin-before:0px;
+      -webkit-margin-after:0px;
+      -webkit-margin-start:0em;
+      -webkit-margin-end:0em;
+      margin: 0px;
+
     };
     --paper-menu: {
-      @apply(--sc-font-body1);
+      
+      font-family: montserratlight;
+      -webkit-font-smoothing: antialiased;
+      font-weight: 100;  
+
+      font-size: 18px;
+      font-weight: 300;
+      line-height: 24px;
+      -webkit-margin-before:0px;
+      -webkit-margin-after:0px;
+      -webkit-margin-start:0em;
+      -webkit-margin-end:0em;
+      margin: 0px;
+
     };
     --paper-menu-button: {
-      @apply(--sc-font-body1);
+      
+      font-family: montserratlight;
+      -webkit-font-smoothing: antialiased;
+      font-weight: 100;  
+
+      font-size: 18px;
+      font-weight: 300;
+      line-height: 24px;
+      -webkit-margin-before:0px;
+      -webkit-margin-after:0px;
+      -webkit-margin-start:0em;
+      -webkit-margin-end:0em;
+      margin: 0px;
+
     };
     --paper-menu-button-dropdown: {
-      @apply(--sc-font-body1);
+      
+      font-family: montserratlight;
+      -webkit-font-smoothing: antialiased;
+      font-weight: 100;  
+
+      font-size: 18px;
+      font-weight: 300;
+      line-height: 24px;
+      -webkit-margin-before:0px;
+      -webkit-margin-after:0px;
+      -webkit-margin-start:0em;
+      -webkit-margin-end:0em;
+      margin: 0px;
+
     };
     --paper-dropdown-menu-input: {
-      @apply(--sc-font-body1);
+      
+      font-family: montserratlight;
+      -webkit-font-smoothing: antialiased;
+      font-weight: 100;  
+
+      font-size: 18px;
+      font-weight: 300;
+      line-height: 24px;
+      -webkit-margin-before:0px;
+      -webkit-margin-after:0px;
+      -webkit-margin-start:0em;
+      -webkit-margin-end:0em;
+      margin: 0px;
+
       color: red;
     };
     --paper-input-container input: {
-      @apply(--sc-font-body1);
+      
+      font-family: montserratlight;
+      -webkit-font-smoothing: antialiased;
+      font-weight: 100;  
+
+      font-size: 18px;
+      font-weight: 300;
+      line-height: 24px;
+      -webkit-margin-before:0px;
+      -webkit-margin-after:0px;
+      -webkit-margin-start:0em;
+      -webkit-margin-end:0em;
+      margin: 0px;
+
       color: red;
     };
 
@@ -343,30 +291,180 @@ This Font Software is licensed under the SIL Open Font License, Version 1.1.
 
 
   /*  TYPO of swarm.city  */
-  	h1 { @apply(--sc-font-h1); }
-  	h2 { @apply(--sc-font-h2); }
-  	h3 { @apply(--sc-font-h3); }
-  	h4 { @apply(--sc-font-h4); }
-  	p { @apply(--sc-font-body1); }
-    a { @apply(--sc-font-body1); }
+  	h1 { 
+
+      font-family: montserrathairline;
+      -webkit-font-smoothing: antialiased;
+      font-weight: 100;
+
+      -webkit-margin-before:0px;
+      -webkit-margin-after:0px;
+      -webkit-margin-start:0em;
+      -webkit-margin-end:0em;
+      margin: 0px 0px 0px 0px;
+      padding: 0px;
+      font-size: 52px;
+      line-height: 52px;
+
+     }
+
+
+  	h2 { 
+
+      font-family: montserratlight;
+      -webkit-font-smoothing: antialiased;
+      font-weight: 100;  
+
+      -webkit-margin-before:0px;
+      -webkit-margin-after:0px;
+      -webkit-margin-start:0em;
+      -webkit-margin-end:0em;
+      margin: 0px 0px 0px 0px;
+      padding: 0px;
+      font-size: 40px;
+      line-height: 44px;
+
+     }
+
+
+  	h3 { 
+
+      font-family: montserrat;
+      -webkit-font-smoothing: antialiased;
+      font-weight: 300;
+
+      -webkit-margin-before:10px;
+      -webkit-margin-after:10px;
+      -webkit-margin-start:0em;
+      -webkit-margin-end:0em;
+      margin: 10px 0px 10px 0px;
+      padding: 0px;
+      font-size: 24px;
+      line-height: 26px;
+
+     }
+
+
+    h4 {
+
+      font-family: montserratsemibold;
+      -webkit-font-smoothing: antialiased;
+      font-weight: 700;
+
+      -webkit-margin-before:10px;
+      -webkit-margin-after:10px;
+      -webkit-margin-start:0em;
+      -webkit-margin-end:0em;
+      margin: 10px 0px 10px 0px;
+      padding: 0px;
+      font-size: 20px;
+      line-height: 22px;
+    }
+
+
+    p {
+
+      font-family: montserratlight;
+      -webkit-font-smoothing: antialiased;
+      font-weight: 100;  
+
+      font-size: 18px;
+      font-weight: 300;
+      line-height: 24px;
+      -webkit-margin-before:0px;
+      -webkit-margin-after:0px;
+      -webkit-margin-start:0em;
+      -webkit-margin-end:0em;
+      margin: 0px;
+    }
+
+
+
+/*    --sc-font-body2: {
+      @apply(--opensans-light);
+      font-size: 15px;
+      font-weight: 300;
+      line-height: 20px;
+      -webkit-margin-before:0px;
+      -webkit-margin-after:0px;
+      -webkit-margin-start:0em;
+      -webkit-margin-end:0em;
+      margin: 0px;
+    };*/
+
+
+    a {
+      font-family: montserratlight;
+      -webkit-font-smoothing: antialiased;
+      font-weight: 100;  
+
+      font-size: 18px;
+      font-weight: 300;
+      line-height: 24px;
+      -webkit-margin-before:0px;
+      -webkit-margin-after:0px;
+      -webkit-margin-start:0em;
+      -webkit-margin-end:0em;
+      margin: 0px;
+
+      color: var(--ac-blue);
+      text-decoration: none;
+      outline: none;
+      border-bottom: 1px dotted var(--ac-blue);
+    }
+
+
+    small {
+
+      font-family: montserratbold;
+      -webkit-font-smoothing: antialiased;
+      font-weight: 900;
+
+      font-size: 10px;
+      font-weight: 300;
+      line-height: 12px;
+      -webkit-margin-before:0px;
+      -webkit-margin-after:0px;
+      -webkit-margin-start:0em;
+      -webkit-margin-end:0em;
+      margin: 0px;
+
+    }
+
 
     .reg {
-      @apply(--montserrat-reg);
+            font-family: montserrat;
+      -webkit-font-smoothing: antialiased;
+      font-weight: 300;
+
     }
     .semibold {
-      @apply(--montserrat-semibold);
+      font-family: montserratsemibold;
+      -webkit-font-smoothing: antialiased;
+      font-weight: 700;
     }
     .bold {
-      @apply(--montserrat-bold);
+      font-family: montserratbold;
+      -webkit-font-smoothing: antialiased;
+      font-weight: 900;
     }
     .light {
-      @apply(--montserrat-light);
+
+      font-family: montserratlight;
+      -webkit-font-smoothing: antialiased;
+      font-weight: 100;
     }
     .ultralight {
-      @apply(--montserrat-ultralight);
+      font-family: montserratultralight;
+      -webkit-font-smoothing: antialiased;
+      font-weight: 100;
+
     }
     .hairline {
-      @apply(--montserrat-hairline);
+        font-family: montserrathairline;
+        -webkit-font-smoothing: antialiased;
+        font-weight: 100;
+
     }
     .small {
       font-size: 12px;
@@ -464,7 +562,7 @@ This Font Software is licensed under the SIL Open Font License, Version 1.1.
     .minispace {
       width: 100%;
       height: 6px;
-    }
+    } 
     .total {
       width: 100%;
       height: 100%;
@@ -526,6 +624,9 @@ This Font Software is licensed under the SIL Open Font License, Version 1.1.
       width: 100%;
       max-width: 600px;
     }
+    .overflower {
+      overflow-y: scroll;
+    }
 
     /* topbar-stuff */
     .topbar {
@@ -542,7 +643,10 @@ This Font Software is licensed under the SIL Open Font License, Version 1.1.
   /*  SPECIFIC PAPER-ELEMENTS-SKINS of swarm.city  */
 
 	paper-button {
-		@apply(--montserrat-bold);
+    font-family: montserratbold;
+    -webkit-font-smoothing: antialiased;
+    font-weight: 900;
+
 		box-sizing: border-box;
 		padding: 18px 24px 18px 24px;
 		text-transform: none;
@@ -573,7 +677,10 @@ This Font Software is licensed under the SIL Open Font License, Version 1.1.
 
 
   .bigbtn {
-    @apply(--montserrat-bold);
+    font-family: montserratbold;
+    -webkit-font-smoothing: antialiased;
+    font-weight: 900;
+
     @apply(--base-shadow);
     box-sizing: border-box;
     padding: 28px 42px 28px 42px;
@@ -605,6 +712,12 @@ This Font Software is licensed under the SIL Open Font License, Version 1.1.
     @apply(--base-shadow);
   }
 
+  paper-icon-button.medium {
+    width: 55px;
+    height: 55px;
+    padding: 12px;
+  }
+
   paper-icon-button.big {
     width: 76px;
     height: 76px;
@@ -634,15 +747,76 @@ This Font Software is licensed under the SIL Open Font License, Version 1.1.
 */
 
   paper-checkbox {
-		@apply(--sc-font-body1);
+
+      font-family: montserratlight;
+      -webkit-font-smoothing: antialiased;
+      font-weight: 100;  
+
+      font-size: 18px;
+      font-weight: 300;
+      line-height: 24px;
+      -webkit-margin-before:0px;
+      -webkit-margin-after:0px;
+      -webkit-margin-start:0em;
+      -webkit-margin-end:0em;
+      margin: 0px;
+		/*@apply(--sc-font-body1);*/
 	}
 
   paper-dropdown-menu-input {
-    @apply(--sc-font-body1);
+      font-family: montserratlight;
+      -webkit-font-smoothing: antialiased;
+      font-weight: 100;  
+
+      font-size: 18px;
+      font-weight: 300;
+      line-height: 24px;
+      -webkit-margin-before:0px;
+      -webkit-margin-after:0px;
+      -webkit-margin-start:0em;
+      -webkit-margin-end:0em;
+      margin: 0px;
+  }
+
+  paper-input.bolder {
+    --paper-input-container-input: {
+      font-family: montserratsemibold;
+      -webkit-font-smoothing: antialiased;
+      font-weight: 700;
+    };
+
+  }
+
+  paper-input.swtamount {
+    --paper-input-container-input: {
+      
+      font-family: montserratbold;
+      -webkit-font-smoothing: antialiased;
+      font-weight: 900;
+
+      font-size: 24px;
+      line-height: 22px;
+      color: var(--sc-yellow);
+    };
+/*    --paper-input-container-label: {
+      color:var(--sc-grey5);
+    };*/
+    --paper-input-container-focus-color: var(--sc-yellow);
   }
 
 
 
+  paper-input.grey2unfocus {
+    --paper-checkbox-unchecked-color: var(--sc-grey2);
+    --paper-checkbox-unchecked-ink-color: var(--sc-grey2);
+    --paper-input-container-color: var(--sc-grey2);
+  }
+
+  paper-input.grey3unfocus {
+    --paper-checkbox-unchecked-color: var(--sc-grey3);
+    --paper-checkbox-unchecked-ink-color: var(--sc-grey3);
+    --paper-input-container-color: var(--sc-grey3);
+  }
 
 
   /*  MOBILE EXCEPTIONS !!!!!  */
