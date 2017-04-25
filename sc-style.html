@@ -819,10 +819,11 @@
                 @apply(--layout-horizontal);
                 @apply(--layout-start);
                 @apply(--layout-start-justified); 
+               /* @apply(--layout-wrap);*/
+
                 box-sizing:border-box;
                 padding: 0px 0px 0px 14vw;   
                 height: 100%;
-                background-color: red;
               }
 
 
@@ -854,6 +855,126 @@
                 overflow-y:scroll;
                 height: 100%;
               }
+
+              .contentcanvas {
+                width: 100%;
+                height: 100%;
+              }
+
+
+            /* avatar-username-balance-content combo -- IN BETWEEN 1 */
+
+            @media all and (min-width: 721px) and (max-width: 940px) {
+
+                .avatar_username_balance_content {
+                    @apply(--layout-horizontal);
+                    @apply(--layout-start);
+                    @apply(--layout-start-justified); 
+                    box-sizing:border-box;
+                    padding: 0px 0px 0px 10vw;   
+                    height: 100%;
+                }
+
+                  .avatar_username_balance {
+                   height: 100%;
+                    box-sizing:border-box;
+                    padding: 14vh 0px 14vh 0px;
+                    margin-right: 45px;
+                    @apply(--layout-vertical);
+                    @apply(--layout-center);
+                    @apply(--layout-start-justified);
+                  }
+
+                  .pagecontent {
+                    box-sizing:border-box;
+                    padding: 14vh 10vw 0px 0px;
+                    overflow-y:scroll;
+                    height: 100%;
+                  }
+            }
+
+
+
+            /* avatar-username-balance-content combo -- IN BETWEEN 1 */
+
+            @media all and (min-width: 541px) and (max-width: 720px) {
+
+                .avatar_username_balance_content {
+                    @apply(--layout-horizontal);
+                    @apply(--layout-start);
+                    @apply(--layout-start-justified); 
+                    box-sizing:border-box;
+                    padding: 0px 0px 0px 6vw;   
+                    height: 100%;
+                }
+
+                  .avatar_username_balance {
+                   height: 100%;
+                    box-sizing:border-box;
+                    padding: 12vh 0px 12vh 0px;
+                    margin-right: 25px;
+                    @apply(--layout-vertical);
+                    @apply(--layout-center);
+                    @apply(--layout-start-justified);
+                  }
+
+                  .pagecontent {
+                    box-sizing:border-box;
+                    padding: 12vh 6vw 0px 0px;
+                    overflow-y:scroll;
+                    height: 100%;
+                  }
+            }
+
+
+
+            /* avatar-username-balance-content combo -- MOBILE*/
+            @media all and (min-width: 0) and (max-width: 540px) {
+
+                .avatar_username_balance_content {
+                    @apply(--layout-vertical);
+                    @apply(--layout-center-center);
+                    box-sizing:border-box;
+                    padding: 0px;   
+
+
+                }
+                  .avatar_username_balance {
+                    width: 100%;
+                    height: 14vh;
+                    min-height: 82px;
+                    box-sizing:border-box;
+                    padding: 30px 30px 0px 50px;
+                    margin-right: 0px;
+                    @apply(--layout-horizontal-reverse);
+                    @apply(--layout-center);
+                    @apply(--layout-start-justified);
+                  }
+
+
+                  .contentcanvas {
+                    height: 86vh;
+                  }
+
+
+                  #pagecontent {
+                    box-sizing:border-box;
+                    padding: 0px 4vw 0px 4vw;
+                  }
+
+                .notifbadge_corner {
+                    margin-left: 10px;
+                  }
+
+              }
+
+
+
+
+
+
+
+
 
 
 
@@ -1031,62 +1152,9 @@
                     padding-right: 10vw;
                     padding-bottom: 10vh;
                 }
-
-
-            /* avatar-username-balance-content combo -- MOBILE*/
-
-
-                .avatar_username_balance_content {
-                  box-sizing:border-box;
-                  padding: 0px 0px 0px 0px;
-                }
-
-                .avatar_username_balance {
-                  height: 65vh;
-                  width: 100%;
-                  box-sizing:border-box;
-                  padding: 0px;
-                  margin-right: 0vw;
-                  @apply(--layout-vertical);
-                  @apply(--layout-center-center);
-                }
-
-
-                  #pagecontent {
-                    box-sizing:border-box;
-                    padding: 0px 4vw 0px 4vw;
-                  }
-
-
-                    .notifbadge_corner {
-                        margin-left: 10px;
-                      }
-
-
             }
-            @media all and (min-width: 401px) and (max-width: 1200px) {
-                .paddingallround {
-                    padding-top: 15vh;
-                    padding-left: 10vw;
-                    padding-right: 10vw;
-                    padding-bottom: 20vh;
-                }
-                .paddingtop {
-                    padding-top: 15vh;
-                }
-                .paddingbottom {
-                    padding-bottom: 20vh;
-                }
-                .paddingsides {
-                    padding-left: 10vw;
-                    padding-right: 10vw;
-                }
-                .paddingwithouttop {
-                    padding-left: 10vw;
-                    padding-right: 10vw;
-                    padding-bottom: 20vh;
-                }
-            }
+
+
             @media all and (min-width: 1201px) {
                 .paddingallround {
                     padding-top: 15vh;
