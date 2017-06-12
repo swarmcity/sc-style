@@ -206,9 +206,9 @@
                     font-family: montserratlight;
                     -webkit-font-smoothing: antialiased;
                     font-weight: 100;
-                    font-size: 18px;
+                    font-size: 16px;
                     font-weight: 300;
-                    line-height: 24px;
+                    line-height: 22px;
                     -webkit-margin-before: 0px;
                     -webkit-margin-after: 0px;
                     -webkit-margin-start: 0em;
@@ -870,8 +870,8 @@
               }
 
               .pagecontent {
-                box-sizing:border-box;
-                padding: 18vh 14vw 0px 0px;
+/*                box-sizing:border-box;
+                padding: 18vh 14vw 0px 0px;*/
                 overflow-y:scroll;
                 height: 100%;
               }
@@ -977,10 +977,6 @@
                   }
 
 
-                  #pagecontent {
-                    box-sizing:border-box;
-                    padding: 0px 4vw 0px 4vw;
-                  }
 
                 .notifbadge_corner {
                     margin-left: 10px;
@@ -1132,16 +1128,23 @@
                 };
             }
             paper-input.swtamount {
+
+                --paper-checkbox-unchecked-color: var(--sc-grey2);
+                --paper-checkbox-unchecked-ink-color: var(--sc-grey2);
+                --paper-input-container-color: var(--sc-grey2);
+
                 --paper-input-container-input: {
                     font-family: montserratbold;
                     -webkit-font-smoothing: antialiased;
                     font-weight: 900;
-                    font-size: 24px;
+                    font-size: 16px;
                     line-height: 22px;
                     color: var(--sc-yellow);
                 };      
                 --paper-input-container-focus-color: var(--sc-yellow);
             }
+
+
             paper-input.grey2unfocus {
                 --paper-checkbox-unchecked-color: var(--sc-grey2);
                 --paper-checkbox-unchecked-ink-color: var(--sc-grey2);
@@ -1152,6 +1155,18 @@
                 --paper-checkbox-unchecked-ink-color: var(--sc-grey3);
                 --paper-input-container-color: var(--sc-grey3);
             }
+
+            paper-textarea.grey2unfocus {
+                --paper-checkbox-unchecked-color: var(--sc-grey2);
+                --paper-checkbox-unchecked-ink-color: var(--sc-grey2);
+                --paper-input-container-color: var(--sc-grey2);
+            }
+
+            paper-input paper-input-container {
+                margin: 0px;
+                padding: 0px;
+
+            } 
 
 
 
